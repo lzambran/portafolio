@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portaflio</title>
+    <link rel="shortcut icon" href="./img/ya.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- TODO: MENU -->
+    <div class="contenedor">
+      <header>
+        <div class="logo">
+          <a>Yander</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()"> INICIO </a></li>
+            <li><a href="#sobremi" onclick="seleccionar()"> SOBRE MI </a></li>
+            <li><a href="#habilidades" onclick="seleccionar()"> HABILIDADES </a></li>
+            <li><a href="#curriculum" onclick="seleccionar()"> CURRICULUM </a></li>
+            <li><a href="#portafolio" onclick="seleccionar()"> PORTAFOLIO </a></li>
+            <li><a href="#contacto" onclick="seleccionar()"> CONTACTO </a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-reponsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+    <!-- TODO: SESION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contendio-inicio">
+        <div class="contenedor-img">
+          <img src="./img/luis.jpg" alt="" />
+        </div>
+        <h1>Luis Zambrano</h1>
+        <h2>Ing. Tecnologia de la Informacion</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/luis.zambrano.39750121" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/luis-zambrano-8a8738265" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=5930978716971&text=Hola%20buenas....necesito%20contactarme%20con%20usted.." target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+        </div>
+      </div>
+    </section>
+    <!-- TODO: SESION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-sobremi">
+        <h2>Sobre Mi</h2>
+        <p>
+          <span>Hola, soy Luis Zambrano. </span>Ingeniero en 
+          Tecnologías de la Información, con 
+          habilidades destacadas en la 
+          resolución de problemas, la 
+          implementación eficiente de 
+          soluciones y la colaboración efectiva 
+          en equipos para lograr metas 
+          preestablecidas. Poseo 
+          conocimientos fundamentales en 
+          programación, bases de datos, 
+          seguridad informática y gestión de 
+          proyectos. Mantengo una constante 
+          actualización con las últimas 
+          tendencias y avances tecnológicos, 
+          asegurando un enfoque proactivo y 
+          vanguardista en mi enfoque 
+          profesional.
+        </p>
+        <div class="fila">
+          <!-- TODO:DATOS PERSONALES -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Cumpleaños:</strong>
+                17-10-1997
+              </li>
+              <li>
+                <strong>Telefono:</strong>
+                0978716971
+              </li>
+              <li>
+                <strong>Email:</strong>
+                zluis171997@gmail.com
+              </li>
+              <li>
+                <strong>Sitio Web:</strong>
+                www.example.com
+              </li>
+              <li>
+                <strong>Direccion:</strong>
+                Manabi - Portoviejo - Crucita - La Boca
+              </li>
+              <li>
+                <strong>Email:</strong>
+                zluis171997@gmail.com
+              </li>
+            </ul>
+          </div>
+          <!-- TODO:INTERESES -->
+          <div class="col">
+            <div class="intereses">
+              <h3>Habilidades</h3>
+              <div class="contenedor-intereses">
+                <div class="intereses">
+                  <i class="fa-solid fa-gamepad"></i>
+                  <span>JUGAR</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-music"></i>
+                  <span>MUSICA</span>
+                </div>
+                <div class="intereses">
+                  <i class="fa-solid fa-code"></i>
+                  <span>PROGRAMAR</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="downloadButton">
+            Descargar CV <i class="fa-solid fa-download"></i>
+            <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- TODO: SESION HABILIDADES -->
+    <section id="habilidades" class="habilidades">
+      <div class="contenido-habilidades">
+        <h2>Habilidades</h2>
+        <div class="fila">
+          <div class="col">
+            <h3>Tecnicas | Habilidades</h3>
+            <div class="habilidad">
+              <span>HTML & CSS</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>JavaScript</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Angular</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>60%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>NodeJs</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>PHP</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Python</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>40%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>SQL</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TODO:HABILIDADES PROFESIONALES -->
+          <div class="col">
+            <h3>Profesional | Habilidades</h3>
+            <div class="habilidad">
+              <span>Resolución de Problemas</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>85%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Trabajo en Equipo y Comunicacion</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Creatividad y Dedicacion</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>90%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Dominio de lenguajes de programación</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>70%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Gestión de Proyectos</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Conocimientos de Bases de Datos</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>80%</span>
+                </div>
+              </div>
+            </div>
+            <div class="habilidad">
+              <span>Aprendizaje Continuo</span>
+              <div class="barra-habilidad">
+                <div class="progreso">
+                  <span>100%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: SESION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-curriculum">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierdo">
+            <h3>Educación</h3>
+            <div class="item izq">
+              <h4>
+                Ciencias Informática, Ingeniero en Tecnología de la Información
+              </h4>
+              <span class="casa">Universidad Laica Eloy Alfaro de Manabi</span>
+              <span class="fecha">2018-04 - 2023-08 </span>
+              <p>
+                Egresado la carrera de ingeniería en tecnologías de la
+                información.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Bachiller de Ciencia</h4>
+              <span class="casa">Unidad Educativa Rodolfo “Chávez Rendón”</span>
+              <span class="fecha">2010-04 - 2015-03</span>
+              <p>Graduado en Bachiller en ciencias.</p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>Experiencia</h3>
+            <div class="item dere">
+              <h4>Desarrollador Móvil</h4>
+              <span class="casa">Indumaster, Manta </span>
+              <span class="fecha">2022-11 - 2023-01</span>
+              <p>
+                Desarrollo una aplicación móvil aplicando Node Js y Android
+                Studio.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item dere">
+              <h4>Ingeniero de soporte técnico</h4>
+              <span class="casa"
+                >Dirección de Informática e Innovación Tecnológica – DIIT,
+                Manta</span
+              >
+              <span class="fecha">2022-02 - 2022-08</span>
+              <p>
+                Capacitación de sistemas y mantenimiento a docente y
+                estudiantes, así como soporte técnico en salas de cómputo.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+            <div class="item dere">
+              <h4>Desarrollador de sistema</h4>
+              <span class="casa">Almacén Veicor, Manta </span>
+              <span class="fecha">2021-03 - 2021-09 </span>
+              <p>
+                Desarrollador y prototipar de sitio web con HTML, JavaScript y
+                CSS.
+              </p>
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: SESION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+      <div class="contendio-portafolio">
+        <h2>Portafolio</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/error-404.png" alt="" />
+            <div class="overlay">
+              <h3>Eco-merce</h3>
+              <p>Evidencias</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: SESION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contendio-contacto">
+        <h2>Contacto</h2>
+        <div class="fila">
+          <!-- TODO: FORMULARIO -->
+          <div class="col">
+            <input type="text" placeholder="Tu nombre" />
+            <input type="number" placeholder="Numero telefonico" />
+            <input type="email" placeholder="Direccion de correo" />
+            <input type="text" placeholder="Tema" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje de contacto"
+            ></textarea>
+            <button>
+              Enviar Mensaje <i class="fa-regular fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+          </div>
+          <!-- TODO:MAPA -->
+          <div class="col">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d557.4224564815682!2d-80.52098724752915!3d-0.8229469040595846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1ses!2sec!4v1712851902102!5m2!1ses!2sec"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Manabi - Portoviejo - Crucita - Las Gilces.
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile"></i>
+                        Llamame: 0978716971
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: zluis171997@gmail.com
+                    </li>
+                    
+                </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TODO: SESION FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+    </footer>
+
+    <script src="./js/portafolio.js"></script>
+  </body>
+</html>
